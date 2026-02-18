@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git url:"", branch:"main"
+        git url:"https://github.com/netlitrain/multi-branch-deployment.git", branch:"main"
       }
     }
 
