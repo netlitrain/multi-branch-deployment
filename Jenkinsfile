@@ -30,7 +30,7 @@ pipeline {
   }
   post {
     success {
-      clean Ws()
+      cleanWs()
     }
     failure {
       echo "PIPELINE FAILED, PLEASE CHECK THE LOGS"
