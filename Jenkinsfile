@@ -2,9 +2,9 @@ pipeline {
   agent { label "netligent" }
 
   environment {
-    IMAGE_NAME = netweb
+    IMAGE_NAME = "netweb"
     IMAGE_TAG = "${BUILD_NUMBER}"
-    CONTAINER_NAME = net1
+    CONTAINER_NAME = "net1"
   }
 
   stages {
