@@ -1,5 +1,9 @@
 pipeline {
-  agent { label "netligent" }
+  agent { label "${LABEL_NAME}" }
+
+  parameters {
+        string(name: 'LABEL_NAME', defaultValue: 'netligent', description: 'label')
+    }
 
   environment {
     IMAGE_NAME = "netweb"
